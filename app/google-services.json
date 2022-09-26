@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "317183118344",
+    "project_id": "kotlincartfirebase-f2ef0",
+    "storage_bucket": "kotlincartfirebase-f2ef0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317183118344:android:c174af43d3f407057695bd",
+        "android_client_info": {
+          "package_name": "com.sultan.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317183118344-aq9p9hf78ph26fqlvgmdfv9814mdh50j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu8wcYO0edej8WwM3pCer5H9Zet6Bzvb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317183118344-aq9p9hf78ph26fqlvgmdfv9814mdh50j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
