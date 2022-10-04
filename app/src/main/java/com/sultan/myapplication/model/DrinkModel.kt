@@ -1,4 +1,4 @@
-package com.sultan.myapplication.DrinkModel
+package com.sultan.myapplication.model
 
 class DrinkModel {
     var key : String? = null
