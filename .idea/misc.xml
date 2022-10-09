@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BosX.SULTAN4IK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_cart.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/BosX.SULTAN4IK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/BosX.SULTAN4IK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layout_cart_item.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/BosX.SULTAN4IK/AndroidStudioProjects/MyApplication/app/src/main/res/layout/layout_drink_item.xml" value="0.22735507246376813" />
       </map>
     </option>

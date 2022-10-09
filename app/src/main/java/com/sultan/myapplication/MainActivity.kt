@@ -1,21 +1,21 @@
 package com.sultan.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.sultan.myapplication.model.DrinkModel
 import com.sultan.myapplication.adapter.MyDrinkAdapter
 import com.sultan.myapplication.databinding.ActivityMainBinding
 import com.sultan.myapplication.eventbus.UpdateCartEvent
 import com.sultan.myapplication.listener.ICartLoadListener
 import com.sultan.myapplication.listener.IDrinkLoadListener
 import com.sultan.myapplication.model.CartModel
+import com.sultan.myapplication.model.DrinkModel
 import com.sultan.myapplication.utils.SpaceItemDecoration
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity(), IDrinkLoadListener, ICartLoadListener 
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN , sticky = true)
-    public fun onUpdateCartEvent(event: UpdateCartEvent)
+    fun onUpdateCartEvent(event: UpdateCartEvent)
     {
         countCartFromFirebase()
     }
@@ -110,6 +110,8 @@ class MainActivity : AppCompatActivity(), IDrinkLoadListener, ICartLoadListener 
         val gridLayoutManager = GridLayoutManager(this, 2)
         binding.recyclerDrink.layoutManager = gridLayoutManager
         binding.recyclerDrink.addItemDecoration(SpaceItemDecoration())
+
+        binding.btnCart.setOnClickListener{ startActivity(Intent(this , CartActivity::class.java)) }
     }
 
 
